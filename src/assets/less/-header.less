@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 15px;
+  padding: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.58);
 
@@ -132,4 +132,53 @@
 
     }
   }
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+}
+
+.new-header {
+  &__link {
+    color: #08252c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    &--margin {
+      margin-top: 13px;
+    }
+  }
+}
+
+.lease {
+  padding: 0;
+  margin-left: 30px;
+
+  a {
+    background-color: #09262d;
+    padding: 14px 30px 14px 30px;
+    display: block;
+    color: #ffffff;
+    .gotham;
+    font-size: 15px;
+    font-weight: 500;
+
+    span {
+      display: block;
+      border-top: 1px solid #3a5157;
+      border-bottom: 1px solid #3a5157;
+      max-width: 80px;
+      padding: 4px 0;
+      line-height: 1.2;
+    }
+
+    &:hover {
+      background-color: lighten(#09262d, 10%);
+    }
+  }
+
 }
