@@ -7321,6 +7321,11 @@ a:active {
   margin: 0 0 1em 0;
   list-style: none;
 }
+@media (max-width: 767px) {
+  .footer-nav-links {
+    text-align: center;
+  }
+}
 .footer-nav-links li {
   margin-bottom: 1em;
 }
@@ -7396,6 +7401,8 @@ a:active {
   color: #4a4b47;
   text-align: right;
   font-size: 16px;
+  margin-top: 40px;
+  margin-right: 40px;
 }
 @media (max-width: 767px) {
   .copyright {
@@ -7442,6 +7449,11 @@ a:active {
     margin-top: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-footer--border {
+    border: none;
+  }
+}
 .new-footer--border-l {
   margin-top: 84px;
   border-left: 2px solid #d9dddf;
@@ -7451,6 +7463,11 @@ a:active {
   .new-footer--border-l {
     border: none;
     margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-footer--border-l {
+    margin-top: 50px;
   }
 }
 .new-footer__title {
@@ -7472,6 +7489,11 @@ a:active {
     margin-top: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-footer__title--margin {
+    margin-top: 74px;
+  }
+}
 .new-footer__title--follow {
   padding-top: 24px;
 }
@@ -7484,8 +7506,48 @@ a:active {
   font-size: 18px;
   display: block;
 }
+@media (max-width: 767px) {
+  .new-footer__adr-link {
+    text-align: center;
+  }
+}
 .new-footer--text-align {
   text-align: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-footer--text-align {
+    margin-left: 35px;
+  }
+}
+.new-footer__site-links {
+  list-style: none;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .new-footer__site-links {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.new-footer__site-links > li {
+  display: inline-block;
+}
+.new-footer__site-links > li > a {
+  color: #4a4b47;
+  margin-right: 24px;
+}
+@media (max-width: 767px) {
+  .new-footer__site-links > li > a {
+    margin-right: 0;
+  }
+}
+.new-footer__site-links--last {
+  margin-left: 24px;
+}
+@media (max-width: 767px) {
+  .new-footer__site-links--last {
+    margin-left: 0;
+  }
 }
 .button {
   display: inline-block;
@@ -9518,6 +9580,11 @@ select.form-control::-ms-expand {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767px) {
+  .welcome__about {
+    font-size: 25px;
+  }
+}
 .welcome__line {
   background-image: url(../../images/line.png);
   height: 2px;
@@ -9531,6 +9598,11 @@ select.form-control::-ms-expand {
   margin-top: 137px;
   margin-bottom: 56px;
 }
+@media (max-width: 767px) {
+  .welcome__line--left {
+    margin-top: 45px;
+  }
+}
 .welcome__wrap-letter {
   position: relative;
 }
@@ -9538,19 +9610,24 @@ select.form-control::-ms-expand {
   position: absolute;
   top: -332px;
   background-color: #fff;
-  height: 684px;
   text-align: justify;
   padding: 20px;
 }
-@media (min-width: 991px) {
+@media (max-width: 767px) {
   .letter {
-    top: 65px;
+    left: 0;
+    top: 45px;
   }
 }
 .letter--border {
   border: 1px solid #e8ebeb;
   padding: 0 40px;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .letter--border {
+    padding: 0 20px;
+  }
 }
 .letter__title {
   margin-top: 65px;
@@ -9560,16 +9637,54 @@ select.form-control::-ms-expand {
   margin-bottom: 50px;
   font-family: 'Cochin', serif;
 }
+@media (max-width: 767px) {
+  .letter__title {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
 .letter__paragraph {
   color: #817f78;
   font-family: 'Gotham', sans-serif;
   margin-bottom: 50px;
   font-size: 17px;
 }
+@media (max-width: 346px) {
+  .letter__paragraph {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 347px) and (max-width: 379px) {
+  .letter__paragraph {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 380px) and (max-width: 767px) {
+  .letter__paragraph {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+}
 .letter__arrow {
   text-align: right;
   text-transform: uppercase;
   font-size: 17px;
+  margin-bottom: 20px;
+}
+.letter__arrow > a {
+  color: #08252c;
+  text-decoration: none;
+}
+.letter__arrow > a:hover {
+  color: #08252c;
+}
+@media (max-width: 767px) {
+  .letter__arrow {
+    font-size: 15px;
+  }
 }
 .letter__img {
   margin-top: -6px;

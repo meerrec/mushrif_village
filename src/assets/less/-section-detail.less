@@ -347,6 +347,9 @@
     @media (min-width: @screen-sm-max) {
       margin-bottom: 40px;
     }
+    @media (max-width: 767px) {
+          font-size: 25px;
+    }
   }
   &__line {
     background-image: url(../../images/line.png);
@@ -359,6 +362,9 @@
     &--left {
       margin-top: 137px;
       margin-bottom: 56px;
+      @media (max-width: 767px) {
+            margin-top: 45px;
+      }
     }
   }
   &__wrap-letter {
@@ -370,16 +376,19 @@
   position: absolute;
   top: -332px;
   background-color: #fff;
-  height: 684px;
   text-align: justify;
   padding: 20px;
-  @media (min-width: @screen-sm-max) {
-    top: 65px;
+  @media (max-width: 767px) {
+        left: 0;
+        top: 45px;
   }
   &--border {
     border: 1px solid #e8ebeb;
     padding: 0 40px;
     height: 100%;
+    @media (max-width: 767px) {
+          padding: 0 20px;
+    }
   }
   &__title {
     margin-top: 65px;
@@ -387,18 +396,46 @@
     color: #09262c;
     line-height: 0;
     margin-bottom: 50px;
-    .cochin
+    .cochin;
+    @media (max-width: 767px) {
+          font-size: 26px;
+          margin-top: 40px;
+          margin-bottom: 25px;
+    }
   }
   &__paragraph {
     color: #817f78;
     .gotham;
     margin-bottom: 50px;
     font-size: 17px;
+    @media (max-width: 346px) {
+          font-size: 15px;
+          margin-bottom: 25px;
+    }
+    @media (min-width: 347px) and (max-width: 379px) {
+          font-size: 16px;
+          margin-bottom: 25px;
+    }
+    @media (min-width: 380px) and (max-width: 767px) {
+          font-size: 17px;
+          margin-bottom: 25px;
+    }
   }
   &__arrow {
     text-align: right;
     text-transform: uppercase;
-    font-size: 17px
+    font-size: 17px;
+    margin-bottom: 20px;
+    > a {
+      color: #08252c;
+      text-decoration: none;
+      &:hover {
+        color: #08252c;
+      }
+    }
+    @media (max-width: 767px) {
+        font-size: 15px;
+    }
   }
   &__img {
     margin-top: -6px;
