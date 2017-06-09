@@ -7206,29 +7206,31 @@ a:active {
 .mainnav > ul > li.active a {
   color: #9da8ab;
 }
-.mainnav > ul > li.lease {
-  padding: 0;
-  margin-left: 30px;
-}
-.mainnav > ul > li.lease a {
-  background-color: #09262d;
-  padding: 14px 30px 14px 30px;
-  display: block;
-  color: #ffffff;
-  font-family: 'Gotham', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
-.mainnav > ul > li.lease a span {
-  display: block;
-  border-top: 1px solid #3a5157;
-  border-bottom: 1px solid #3a5157;
-  max-width: 80px;
-  padding: 7px 0;
-  line-height: 1.2;
-}
-.mainnav > ul > li.lease a:hover {
-  background-color: #124a58;
+@media (min-width: 992px) {
+  .mainnav > ul > li.lease {
+    padding: 0;
+    margin-left: 30px;
+  }
+  .mainnav > ul > li.lease a {
+    background-color: #09262d;
+    padding: 14px 30px 14px 30px;
+    display: block;
+    color: #ffffff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .mainnav > ul > li.lease a span {
+    display: block;
+    border-top: 1px solid #3a5157;
+    border-bottom: 1px solid #3a5157;
+    max-width: 80px;
+    padding: 7px 0;
+    line-height: 1.2;
+  }
+  .mainnav > ul > li.lease a:hover {
+    background-color: #124a58;
+  }
 }
 .navbar-toggle .icon-bar {
   display: block;
@@ -7246,29 +7248,31 @@ a:active {
 .new-header__link--margin {
   margin-top: 13px;
 }
-.lease {
-  padding: 0;
-  margin-left: 30px;
-}
-.lease a {
-  background-color: #09262d;
-  padding: 14px 30px 14px 30px;
-  display: block;
-  color: #ffffff;
-  font-family: 'Gotham', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-}
-.lease a span {
-  display: block;
-  border-top: 1px solid #3a5157;
-  border-bottom: 1px solid #3a5157;
-  max-width: 80px;
-  padding: 4px 0;
-  line-height: 1.2;
-}
-.lease a:hover {
-  background-color: #124a58;
+@media (min-width: 992px) {
+  .lease {
+    padding: 0;
+    margin-left: 30px;
+  }
+  .lease a {
+    background-color: #09262d;
+    padding: 14px 30px 14px 30px;
+    display: block;
+    color: #ffffff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .lease a span {
+    display: block;
+    border-top: 1px solid #3a5157;
+    border-bottom: 1px solid #3a5157;
+    max-width: 80px;
+    padding: 4px 0;
+    line-height: 1.2;
+  }
+  .lease a:hover {
+    background-color: #124a58;
+  }
 }
 #footer {
   padding: 0 15px;

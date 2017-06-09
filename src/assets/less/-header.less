@@ -99,37 +99,36 @@
           color: #9da8ab;
         }
       }
+      @media (min-width: 992px) {
+        &.lease {
+          padding: 0;
+          margin-left: 30px;
 
-      &.lease {
-        padding: 0;
-        margin-left: 30px;
-
-        a {
-          background-color: #09262d;
-          padding: 14px 30px 14px 30px;
-          display: block;
-          color: #ffffff;
-          .gotham;
-          font-size: 15px;
-          font-weight: bold;
-
-          span {
+          a {
+            background-color: #09262d;
+            padding: 14px 30px 14px 30px;
             display: block;
-            border-top: 1px solid #3a5157;
-            border-bottom: 1px solid #3a5157;
-            max-width: 80px;
-            padding: 7px 0;
-            line-height: 1.2;
+            color: #ffffff;
+            .gotham;
+            font-size: 15px;
+            font-weight: bold;
+
+            span {
+              display: block;
+              border-top: 1px solid #3a5157;
+              border-bottom: 1px solid #3a5157;
+              max-width: 80px;
+              padding: 7px 0;
+              line-height: 1.2;
+            }
+
+            &:hover {
+              background-color: lighten(#09262d, 10%);
+            }
           }
 
-          &:hover {
-            background-color: lighten(#09262d, 10%);
-          }
         }
-
       }
-
-
     }
   }
 }
@@ -154,31 +153,32 @@
   }
 }
 
-.lease {
-  padding: 0;
-  margin-left: 30px;
+@media (min-width: 992px) {
+  .lease {
+    padding: 0;
+    margin-left: 30px;
 
-  a {
-    background-color: #09262d;
-    padding: 14px 30px 14px 30px;
-    display: block;
-    color: #ffffff;
-    .gotham;
-    font-size: 15px;
-    font-weight: 500;
-
-    span {
+    a {
+      background-color: #09262d;
+      padding: 14px 30px 14px 30px;
       display: block;
-      border-top: 1px solid #3a5157;
-      border-bottom: 1px solid #3a5157;
-      max-width: 80px;
-      padding: 4px 0;
-      line-height: 1.2;
-    }
+      color: #ffffff;
+      .gotham;
+      font-size: 15px;
+      font-weight: 500;
 
-    &:hover {
-      background-color: lighten(#09262d, 10%);
+      span {
+        display: block;
+        border-top: 1px solid #3a5157;
+        border-bottom: 1px solid #3a5157;
+        max-width: 80px;
+        padding: 4px 0;
+        line-height: 1.2;
+      }
+
+      &:hover {
+        background-color: lighten(#09262d, 10%);
+      }
     }
   }
-
 }
