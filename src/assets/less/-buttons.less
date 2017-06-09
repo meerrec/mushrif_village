@@ -1,0 +1,173 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 19px 30px 14px 30px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s;
+  text-align: center;
+
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+
+  &-white {
+    background-color: #ffffff;
+    color: #1d353b;
+    font-weight: bold;
+
+    &:hover {
+      background-color: darken(#ffffff, 10%);
+      color: #1d353b;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      color: #1d353b;
+    }
+
+
+  }
+
+  &-dark {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #082026;
+    border: 1px solid rgba(107, 125, 129, 0.81);
+    font-weight: normal;
+    padding: 18px 30px 14px 30px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: lighten(#082026, 10%);
+    }
+
+    &:focus,
+    &:active {
+      color: #ffffff;
+      background-color: #082026;
+    }
+
+  }
+
+  &-find {
+    background-color: #08252c;
+    color: #ffffff;
+    font-size: 19px;
+    padding: 15px 90px 10px 30px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      background: url(../images/button-find-caret.png) 50% 50% no-repeat;
+      border-left: 1px solid #9da8ab;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+    }
+
+    &:hover {
+      background-color: lighten(#08252c, 10%);
+      color: #ffffff;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #08252c;
+      color: #ffffff;
+    }
+  }
+
+  &-item {
+    color: #ffffff;
+    background-color: #082026;
+    padding: 18px 25px 14px 25px;
+    font-size: 20px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: lighten(#082026, 10%);
+
+    }
+
+    &:focus,
+    &:active {
+      color: #ffffff;
+      background-color: #082026;
+    }
+
+    &.button-call {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../images/icon-phone.png) 0 0 no-repeat;
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
+        margin-top: -2px;
+        margin-bottom: -1px;
+      }
+    }
+    &.button-email {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../images/icon-email.png) 0 0 no-repeat;
+        width: 26px;
+        height: 17px;
+        margin-right: 10px;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  &-submit {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #f6f6f8;
+    background-color: #3b5256;
+    padding: 20px 55px 15px 55px;
+
+    &:hover {
+      color: #f6f6f8;
+      background-color: lighten(#3b5256, 10%);
+    }
+
+    &:active,
+    &:focus {
+      color: #f6f6f8;
+      background-color: #3b5256;
+    }
+
+  }
+
+  &-more {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #082026;
+
+    &:hover {
+      color: #ffffff;
+      background-color: lighten(#082026, 10%);
+
+    }
+
+    &:active,
+    &:focus {
+      color: #ffffff;
+      background-color: #082026;
+    }
+  }
+}

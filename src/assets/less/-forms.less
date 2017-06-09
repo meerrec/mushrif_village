@@ -1,0 +1,61 @@
+@placeholder-color: #3b5256;
+
+.form-control {
+  width: 100%;
+  border-radius: 0;
+  border-color: #869497;
+  box-shadow: none;
+  background-color: #ffffff;
+  color: #09262c;
+  font-size: 19px;
+  height: 58px;
+
+  &::-webkit-input-placeholder {
+    color: @placeholder-color;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: @placeholder-color;
+    opacity: 1;
+  }
+  /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: @placeholder-color;
+    opacity: 1;
+  }
+  /* Firefox 18- */
+  &:-ms-input-placeholder {
+    color: @placeholder-color;
+    opacity: 1;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0.3;
+    //color: transparent;
+  }
+  &:focus::-moz-placeholder {
+    opacity: 0.3;
+    //color: transparent;
+  }
+  &:focus:-moz-placeholder {
+    opacity: 0.3;
+    //color: transparent;
+  }
+  &:focus:-ms-input-placeholder {
+    opacity: 0.3;
+    //color: transparent;
+  }
+}
+
+select {
+  &.form-control {
+    appearance: none;
+    background-image: url(../images/select-caret.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+
+    &::-ms-expand{
+      display: none;
+    }
+  }
+}
+

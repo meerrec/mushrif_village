@@ -1,0 +1,62 @@
+body  {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  .bodyfont;
+  font-size: 16px;
+  color: @text-color;
+  min-width: 320px;
+  background-color: #ebedee;
+  background: #f8f7f5 url(../images/bg-pattern.jpg) 50% 0 repeat;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    color: @link-active-color;
+    text-decoration: none;
+  }
+}
+
+#wrapper {
+  position: relative;
+}
+
+#container {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+.section-container {
+  position: relative;
+  text-align: center;
+}
+
+.section-content {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  .clearfix;
+}
+
+

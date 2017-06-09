@@ -1,0 +1,59 @@
+html, body {height: 100%;}
+
+html {
+  * {
+    max-height: 999999px;
+  }
+}
+
+img {border: 0;}
+
+p {
+
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {clear: both;}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both !important;
+    height: 0;
+  }
+  * html & {
+    position: relative;
+    zoom: 1
+  }
+  * + html & {
+    position: relative;
+    zoom: 1
+  }
+}
+
+a {
+  transition: all 0.15s;
+  outline: 0;
+
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}

@@ -1,0 +1,124 @@
+.thevillas-list {
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  list-style: none;
+  .clearfix;
+  text-align: left;
+
+  > li {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    float: left;
+    width: 50%;
+
+    &.featured {
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+.villa-item {
+  position: relative;
+
+  &.featured {
+
+    .villa-item-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .featured {
+      position: absolute;
+      left: 9%;
+      top: 0;
+      transform: translate(0, -40%);
+      z-index: 2;
+      font-size: 34px;
+      color: #faf5f9;
+      background-color: #a2d183;
+      padding: 15px 37px 10px 37px;
+      text-transform: uppercase;
+    }
+
+    .caption {
+      font-size: 34px;
+      display: inline-block;
+      padding: 20px 35px;
+      bottom: 80px;
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      border: 1px solid #ffffff;
+    }
+
+    &:hover {
+      .img {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+  }
+
+  .img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      display: block;
+      transition: all 0.5s;
+    }
+  }
+
+  .caption {
+    position: absolute;
+    display: inline-block;
+    z-index: 3;
+    width: auto;
+    left: 0;
+    bottom: 25px;
+    background-color: #082026;
+    background: rgba(8, 32, 38, 0.67);
+    padding: 15px 35px;
+    color: #ffffff;
+    font-size: 23px;
+
+    .type {
+      font-size: 20px;
+      color: #a2d183;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 2px;
+        width: 12px;
+        color: #a2d183;
+        background-color: #a2d183;
+        margin-top: -3px;
+      }
+
+    }
+
+  }
+}

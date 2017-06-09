@@ -1,0 +1,123 @@
+.section-highlights {
+  background-color: #ffffff;
+
+  .section-container {
+    padding: 180px 0 90px 0;
+  }
+
+  .section-content {
+    text-align: left;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    font-size: 42px;
+    color: #3b5256;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: baseline;
+      position: relative;
+      top: 5px;
+      background: url(../images/hightlights-title-bg.png) 0 0 no-repeat;
+      -webkit-background-size: 73px 43px;
+      background-size: 73px 43px;
+      width: 73px;
+      height: 43px;
+      margin-right: 20px;
+    }
+  }
+
+  .section-description {
+    font-size: 40px;
+    color: #a2d183;
+    max-width: 520px;
+    line-height: 1.2;
+  }
+}
+
+.highlights-list-wrapper {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -60%);
+    width: 303px;
+    height: 394px;
+    border: 8px solid #e1e5e5;
+  }
+}
+.highlights-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+  .clearfix;
+
+
+
+  li {
+    float: left;
+    margin: 0 58px 50px 0;
+    position: relative;
+    z-index: 2;
+    display: block;
+
+    &:nth-child(2n-1) {
+      clear: left;
+      top: -65px;    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+
+    &:before {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 5px;
+      right: 5px;
+      z-index: 2;
+      content: '';
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    .caption {
+      color: #ffffff;
+      font-size: 19px;
+      padding: 20px 22px;
+      display: block;
+      background-color: #08252c;
+      background: rgba(6, 37, 44, 0.9);
+      position: absolute;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      .caption {
+        opacity: 1;
+      }
+    }
+
+  }
+}
