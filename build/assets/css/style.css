@@ -10628,8 +10628,7 @@ select.form-control::-ms-expand {
   padding-top: 20px;
 }
 .floor-plans-list {
-  list-style: none;
-  padding: 0;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 .section-contact .section-container {
