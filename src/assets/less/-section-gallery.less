@@ -12,16 +12,10 @@
 }
 
 .gallery-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  .clearfix;
-  margin-left: -1px;
-  margin-right: -1px;
+  margin: 140px 0;
 
-  > li {
-    width: 33.33333%;
-    float: left;
+
+  > div {
     padding: 1px;
 
     a {
@@ -78,6 +72,7 @@
         img {
           max-width: 100%;
           display: block;
+          width: 100%;
         }
       }
 
@@ -107,6 +102,9 @@
         }
       }
     }
+  }
+  &--margin-b {
+    margin-bottom: 140px;
   }
 }
 
@@ -157,4 +155,10 @@
 .gallery-loader {
   text-align: center;
   padding-top: 20px;
+}
+
+.floor-plans-list {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
 }

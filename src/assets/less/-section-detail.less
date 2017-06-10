@@ -211,11 +211,6 @@
 }
 
 .detail-highlights {
-  padding: 0;
-  margin: 0 -18px;
-  list-style: none;
-  .clearfix;
-
   > li {
     padding: 0 18px;
     margin-bottom: 36px;
@@ -320,6 +315,168 @@
         }
       }
 
+    }
+  }
+}
+
+.villadetail {
+  &__section-title {
+    margin: 0 0 1em 0;
+    font-size: 38px;
+    color: #3b5256;
+    text-align: left;
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+
+    &--margin {
+      margin-top: 20px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: baseline;
+      position: relative;
+      top: 5px;
+      background: url(../images/hightlights-title-bg.png) 0 0 no-repeat;
+      -webkit-background-size: 73px 43px;
+      background-size: 73px 43px;
+      width: 73px;
+      height: 43px;
+      margin-right: 20px;
+      left: 13px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &__price {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #a2d183;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+  &--style {
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      overflow: hidden;
+    }
+
+  }
+}
+
+
+.detail-highlights {
+
+  > div {
+    > div {
+      padding: 0 18px;
+      margin-bottom: 36px;
+      text-align: center;
+      float: left;
+      position: relative;
+      width: 100%;
+
+      &:hover {
+        .img {
+          &:before {
+            background: rgba(8, 37, 44, 0.6);
+          }
+
+        }
+
+        .description-wrapper {
+          .description {
+            transform: scale(1.15) translate(0, -25%);
+          }
+        }
+
+      }
+
+      .img {
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 2;
+          background: rgba(8, 37, 44, 0.7);
+          transition: all 0.3s;
+        }
+
+        img {
+          display: block;
+          position: relative;
+          z-index: 1;
+          max-width: 100%;
+          width: 100%;
+        }
+
+      }
+
+      .description-wrapper {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .description {
+          position: relative;
+          margin: 39% auto 0 auto;
+          z-index: 3;
+          width: 100%;
+          max-width: 340px;
+          padding: 15px 10px 10px 10px;
+          color: #a3d283;
+          text-transform: uppercase;
+          font-size: 24px;
+          line-height: 1.2;
+          transform-origin: center;
+          transition: all 0.3s;
+          transform: translate(0, -25%);
+
+          span {
+            text-transform: none;
+            font-size: 18px;
+            color: #f7f6f4;
+            display: block;
+            margin-bottom: 5px;
+          }
+
+          &:before,
+          &:after {
+            content: '';
+            display: block;
+            background-color: #f7f6f4;
+            width: 228px;
+            height: 2px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+
+          &:before {
+            top: 0;
+          }
+
+          &:after {
+            bottom: 0;
+          }
+        }
+
+      }
     }
   }
 }

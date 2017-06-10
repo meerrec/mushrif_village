@@ -1,11 +1,11 @@
 .section-villas-list {
   background: #f8f7f5 url(../images/bg-pattern.jpg) 50% 0 repeat;
-  
+
   .section-container {
     padding-top: 120px;
     padding-bottom: 140px;
   }
-  
+
   .section-content {
     max-width: 1440px;
     text-align: left;
@@ -52,6 +52,24 @@
       font-size: 18px;
       font-weight: bold;
       color: #3b5256;
+    }
+  }
+}
+
+.villa-list {
+  &--pading {
+    @media (max-width: 767px) {
+      padding-top: 0;
+    }
+  }
+  &--my-pad {
+    @media (max-width: 991px) {
+      padding-top: 0 !important;
+    }
+  }
+  &__title {
+    @media (max-width: 767px) {
+      font-size: 36px !important;
     }
   }
 }

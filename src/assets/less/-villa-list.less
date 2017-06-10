@@ -42,6 +42,10 @@
       background-color: #a2d183;
       padding: 15px 37px 10px 37px;
       text-transform: uppercase;
+      @media (max-width: 500px) {
+        top: -33px;
+        left: 0;
+      }
     }
 
     .caption {
@@ -49,6 +53,9 @@
       display: inline-block;
       padding: 20px 35px;
       bottom: 80px;
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 
@@ -87,6 +94,7 @@
       max-width: 100%;
       display: block;
       transition: all 0.5s;
+      width: 100%;
     }
   }
 
@@ -102,6 +110,7 @@
     padding: 15px 35px;
     color: #ffffff;
     font-size: 23px;
+
 
     .type {
       font-size: 20px;
@@ -120,5 +129,20 @@
 
     }
 
+  }
+}
+
+.new-villa {
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__container {
+    padding-bottom: 0 !important;
+  }
+  &__fe-title {
+    @media (max-width: 500px) {
+      font-size: 23px !important;
+      padding: 15px 45px 10px 37px !important;
+    }
   }
 }
