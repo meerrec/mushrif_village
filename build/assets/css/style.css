@@ -9475,6 +9475,12 @@ select.form-control::-ms-expand {
     padding: 0 !important;
   }
 }
+@media (max-width: 767px) {
+  .my-urban__title {
+    height: 230px;
+    margin-top: 182px;
+  }
+}
 .section-search-form {
   background: #f4f4f6 url(../images/section-search-bg.jpg) 50% 0 no-repeat;
   background-size: cover;
