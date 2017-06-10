@@ -7142,6 +7142,94 @@ button.close {
 .irs-grid-text {
   color: #999;
 }
+@-webkit-keyframes pulse {
+  0%,
+  100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+@-webkit-keyframes logo-fade-in {
+  0% {
+    -webkit-transform: translate(0, -100px);
+            transform: translate(0, -100px);
+  }
+  40% {
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px);
+  }
+  60% {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+@keyframes logo-fade-in {
+  0% {
+    -webkit-transform: translate(0, -100px);
+            transform: translate(0, -100px);
+  }
+  40% {
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px);
+  }
+  60% {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+.logo-fade-in {
+  -webkit-animation: 1.3s logo-fade-in;
+  -webkit-animation-delay: .9s;
+}
+.element {
+  -webkit-animation: pulse 5s infinite;
+          animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+.pan {
+  -webkit-animation-name: stretch;
+          animation-name: stretch;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
 html,
 body {
   height: 100%;
@@ -7510,8 +7598,7 @@ a:active {
   padding: 25px;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  margin-left: -110px;
   background-color: #ffffff;
 }
 .logo-header {
