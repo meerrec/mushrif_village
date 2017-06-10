@@ -7196,9 +7196,45 @@ button.close {
             transform: translate(0, 0%);
   }
 }
+@-webkit-keyframes hero-animation {
+  0% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+  40% {
+    -webkit-transform: translateX(50px) translateY(50px) scale(1.5);
+            transform: translateX(50px) translateY(50px) scale(1.5);
+  }
+  60% {
+    -webkit-transform: translateX(50px) translateY(100px) scale(1.29);
+            transform: translateX(50px) translateY(100px) scale(1.29);
+  }
+  100% {
+    -webkit-transform: translateX(-50px) translateY(0) scale(1);
+            transform: translateX(-50px) translateY(0) scale(1);
+  }
+}
+@keyframes hero-animation {
+  0% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+  40% {
+    -webkit-transform: translateX(50px) translateY(50px) scale(1.5);
+            transform: translateX(50px) translateY(50px) scale(1.5);
+  }
+  60% {
+    -webkit-transform: translateX(50px) translateY(100px) scale(1.29);
+            transform: translateX(50px) translateY(100px) scale(1.29);
+  }
+  100% {
+    -webkit-transform: translateX(-50px) translateY(0) scale(1);
+            transform: translateX(-50px) translateY(0) scale(1);
+  }
+}
 .logo-fade-in {
-  -webkit-animation: 1.3s logo-fade-in;
-  -webkit-animation-delay: .9s;
+  -webkit-animation: 0.83s logo-fade-in;
+  -webkit-animation-delay: .8s;
 }
 .element {
   -webkit-animation: pulse 5s infinite;
@@ -7983,6 +8019,7 @@ a:active {
 }
 .new-footer__title--margin {
   margin-top: 84px;
+  text-align: left;
 }
 @media (max-width: 767px) {
   .new-footer__title--margin {
@@ -8587,9 +8624,16 @@ select.form-control::-ms-expand {
 .section-hero .hero-nav .controls {
   float: right;
 }
-.section-hero-hp .section-container {
+.section-hero-hp .section-background {
   background: url(../images/hero-hp.jpg) 50% 50% no-repeat;
   background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-animation: hero-animation 70s linear alternate infinite;
+          animation: hero-animation 70s linear alternate infinite;
 }
 .section-hero-hp .section-content {
   width: 100%;

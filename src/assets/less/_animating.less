@@ -27,11 +27,26 @@
   }
 }
 
+@keyframes hero-animation {
+  0%{
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  40% {
+    transform: translateX(50px) translateY(50px) scale(1.5);
+  }
+  60%{
+    transform: translateX(50px) translateY(100px) scale(1.29);
+  }
+  100% {
+    transform: translateX(-50px) translateY(0) scale(1);
+  }
+}
+
 
 
 .logo-fade-in {
-  -webkit-animation: 1.3s logo-fade-in;
-  -webkit-animation-delay: .9s;
+  -webkit-animation: .83s logo-fade-in;
+  -webkit-animation-delay: .8s;
 
 
 }

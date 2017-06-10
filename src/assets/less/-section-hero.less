@@ -3,6 +3,7 @@
   min-height: 100vh;
   display: table;
   padding: 0 0 0 0;
+
   .section-container {
     display: table-cell;
     vertical-align: middle;
@@ -127,11 +128,20 @@
 }
 
 .section-hero-hp {
-
-  .section-container {
+  .section-background {
     background: url(../images/hero-hp.jpg) 50% 50% no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    animation: hero-animation 70s linear alternate infinite;
+  }
+  .section-container {
+    // background: url(../images/hero-hp.jpg) 50% 50% no-repeat;
+    // -webkit-background-size: cover;
+    // background-size: cover;
   }
 
   .section-content {
