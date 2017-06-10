@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "ion.rangeSlider": "ionrangeslider#^2.1.7"
+    "ion.rangeSlider": "ionrangeslider#^2.1.7",
+    "owl.carousel": "^2.2.1"
   }
 }

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     $('.gallery-colorbox').colorbox({
         // rel: 'album',
         fixed: true,
@@ -76,7 +78,14 @@ var toogleLogo = (function () {
       console.log('hidden')
       return $logo.animate({'opacity':1})
     })
-}());
+}())
+
+var welcomeCarousel = (function () {
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    nav: true
+  });
+}())
 $(window).load(function() {
 
     $(window).trigger('resize');
