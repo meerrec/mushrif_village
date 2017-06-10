@@ -9160,78 +9160,20 @@ select.form-control::-ms-expand {
   max-width: 520px;
   line-height: 1.2;
 }
-.highlights-list-wrapper {
-  position: relative;
-}
-.highlights-list-wrapper:after {
-  content: '';
+.highlights-list .caption {
+  color: #ffffff;
+  font-size: 19px;
+  padding: 20px 22px;
   display: block;
+  background-color: #08252c;
+  background: rgba(6, 37, 44, 0.9);
   position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%);
-  width: 303px;
-  height: 394px;
-  border: 8px solid #e1e5e5;
-}
-.highlights-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  z-index: 2;
-}
-.highlights-list:before,
-.highlights-list:after {
-  content: " ";
-  display: table;
-}
-.highlights-list:after {
-  clear: both;
-}
-.highlights-list:before,
-.highlights-list:after {
-  content: " ";
-  display: table;
-}
-.highlights-list:after {
-  clear: both;
-}
-.highlights-list:before,
-.highlights-list:after {
-  content: " ";
-  display: table;
-}
-.highlights-list:after {
-  clear: both !important;
-  height: 0;
-}
-* html .highlights-list {
-  position: relative;
-  zoom: 1;
-}
-* + html .highlights-list {
-  position: relative;
-  zoom: 1;
-}
-.highlights-list:before,
-.highlights-list:after {
-  content: " ";
-  display: table;
-}
-.highlights-list:after {
-  clear: both !important;
-  height: 0;
-}
-* html .highlights-list {
-  position: relative;
-  zoom: 1;
-}
-* + html .highlights-list {
-  position: relative;
-  zoom: 1;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .highlights-list li {
   float: left;
@@ -9393,6 +9335,7 @@ select.form-control::-ms-expand {
   position: absolute;
   top: 0px;
   left: 50px;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .highlights__img-1 {
@@ -9405,10 +9348,21 @@ select.form-control::-ms-expand {
     left: 0;
   }
 }
+.highlights__img-1:before {
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  z-index: 2;
+  content: ' s';
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
 .highlights__img-2 {
   position: absolute;
   top: 65px;
   right: 77px;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .highlights__img-2 {
@@ -9425,6 +9379,7 @@ select.form-control::-ms-expand {
   position: absolute;
   left: 50px;
   top: 310px;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .highlights__img-3 {
@@ -9442,6 +9397,7 @@ select.form-control::-ms-expand {
   position: absolute;
   top: 373px;
   right: 77px;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .highlights__img-4 {
