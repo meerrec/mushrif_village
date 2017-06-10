@@ -8639,6 +8639,12 @@ select.form-control::-ms-expand {
   margin-bottom: 40px;
   height: 80px;
 }
+@media (max-width: 767px) {
+  .my-search__range-wrap {
+    height: auto;
+    padding: 5px;
+  }
+}
 .my-search__btn {
   font-family: 'Cochin', serif;
 }
@@ -8648,8 +8654,16 @@ select.form-control::-ms-expand {
   font-family: 'Cochin', serif;
   font-size: 19px;
   color: #a2d183;
-  padding: 10px 35px;
+  padding: 10px 0;
+  width: 15%;
   margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .range_wrap__btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
 }
 .range_wrap__slider {
   display: inline-block;
