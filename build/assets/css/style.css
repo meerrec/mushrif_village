@@ -10691,6 +10691,7 @@ select.form-control::-ms-expand {
 }
 .contact-form--margin {
   margin: 150px;
+  text-align: left;
 }
 .section-detail-page-separator {
   padding: 0;
