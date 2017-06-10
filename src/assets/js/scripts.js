@@ -103,3 +103,5 @@ function closeMenu(){
     $('#mainnav').removeClass('show');
     $('.menu-trigger').removeClass('show');
 }
+
+$("#example_id").ionRangeSlider();
