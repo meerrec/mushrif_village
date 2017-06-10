@@ -10694,7 +10694,7 @@ select.form-control::-ms-expand {
   text-align: left;
 }
 .contact-form--margin {
-  margin: 150px;
+  margin: 150px 0;
   text-align: left;
 }
 .section-detail-page-separator {
