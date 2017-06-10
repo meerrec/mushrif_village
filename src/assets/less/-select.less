@@ -1,0 +1,97 @@
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+#lang-picker {
+    width: 46px;
+    height: 76px;
+    padding: 0px 0px;
+}
+
+.noselect {
+ -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome and Opera */
+}
+
+.select {
+  .noselect;
+
+  font-family: 'Gotham', sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 46px;
+  height: 76px;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #a2d183;
+  padding: 20px 1px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+}
+.select-styled:hover {
+  background-color: #aee18d;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #aee18d;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 40px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #aee18d;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid #75a158;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #75a158;
+  background: #fff;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
