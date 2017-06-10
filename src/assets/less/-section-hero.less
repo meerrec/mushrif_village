@@ -79,12 +79,17 @@
       width: 100%;
       max-width: 1366px;
       margin: 0 auto;
-
+      @media (max-width: 767px) {
+        max-width: 300px;
+      }
     }
 
     .breadcrumbs {
       float: left;
       padding-top: 12px;
+      @media (max-width: 767px) {
+        float: none;
+      }
       > ul {
         list-style: none;
         margin: 0;

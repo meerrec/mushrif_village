@@ -121,6 +121,9 @@
       width: 73px;
       height: 43px;
       margin-right: 20px;
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
@@ -231,6 +234,9 @@
       width: 73px;
       height: 43px;
       margin-right: 20px;
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
@@ -255,6 +261,9 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
 
       &:after {
@@ -361,6 +370,63 @@
       &:hover {
         .caption {
           transform: translate(0, 0);
+        }
+      }
+    }
+  }
+}
+
+.new-urban {
+  &__title {
+    @media (max-width: 767px) {
+      font-size: 40px !important;
+    }
+    @media (min-width: 992px) and (max-width: 1191px) {
+      font-size: 50px !important;
+    }
+  }
+  &__sec-content {
+    @media (max-width: 767px) {
+      padding: 0 !important;
+    }
+    &--first {
+      @media (max-width: 992px) {
+        padding: 200px 0 0 0!important;
+      }
+
+    }
+  }
+  &__highligts {
+    @media (max-width: 767px) {
+      font-size: 43px !important;
+    }
+  }
+  &--bottom {
+    @media (max-width: 991px) {
+      margin-bottom: 125px;
+    }
+  }
+  &__desc {
+    &--margin {
+      @media (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__my-img {
+    @media (max-width: 991px) {
+      display: block;
+      > a {
+        > img {
+          width: 100%;
+        }
+      }
+    }
+    &--first {
+      @media (max-width: 991px) {
+        display: block;
+        > img {
+            width: 100%;
         }
       }
     }

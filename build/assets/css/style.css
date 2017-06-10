@@ -9188,9 +9188,19 @@ select.form-control::-ms-expand {
   position: relative;
   zoom: 1;
 }
+@media (max-width: 767px) {
+  .section-hero .hero-nav-content {
+    max-width: 300px;
+  }
+}
 .section-hero .hero-nav .breadcrumbs {
   float: left;
   padding-top: 12px;
+}
+@media (max-width: 767px) {
+  .section-hero .hero-nav .breadcrumbs {
+    float: none;
+  }
 }
 .section-hero .hero-nav .breadcrumbs > ul {
   list-style: none;
@@ -11020,6 +11030,11 @@ select.form-control::-ms-expand {
   height: 43px;
   margin-right: 20px;
 }
+@media (max-width: 767px) {
+  .urban-highlight-content .title:before {
+    display: none;
+  }
+}
 .urban-highlight-content .description {
   font-size: 17px;
   font-family: 'Gotham', sans-serif;
@@ -11106,6 +11121,11 @@ select.form-control::-ms-expand {
   height: 43px;
   margin-right: 20px;
 }
+@media (max-width: 767px) {
+  .section-urban-description .section-subtitle:before {
+    display: none;
+  }
+}
 .section-urban-description .section-description {
   font-size: 17px;
   color: #65645c;
@@ -11126,6 +11146,11 @@ select.form-control::-ms-expand {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media (max-width: 767px) {
+  .section-urban-description .section-description.bottom-decorated:before {
+    display: none;
+  }
 }
 .section-urban-description .section-description.bottom-decorated:after {
   content: '';
@@ -11267,6 +11292,57 @@ select.form-control::-ms-expand {
 .urban-description-images > li .img:hover .caption {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+@media (max-width: 767px) {
+  .new-urban__title {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1191px) {
+  .new-urban__title {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 767px) {
+  .new-urban__sec-content {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .new-urban__sec-content--first {
+    padding: 200px 0 0 0!important;
+  }
+}
+@media (max-width: 767px) {
+  .new-urban__highligts {
+    font-size: 43px !important;
+  }
+}
+@media (max-width: 991px) {
+  .new-urban--bottom {
+    margin-bottom: 125px;
+  }
+}
+@media (max-width: 767px) {
+  .new-urban__desc--margin {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .new-urban__my-img {
+    display: block;
+  }
+  .new-urban__my-img > a > img {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .new-urban__my-img--first {
+    display: block;
+  }
+  .new-urban__my-img--first > img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
