@@ -10017,6 +10017,11 @@ select.form-control::-ms-expand {
   white-space: nowrap;
   line-height: 38px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .villa-options-list li {
+    font-size: 14px;
+  }
+}
 .villa-options-list li span {
   line-height: 1.1;
 }
@@ -11130,6 +11135,52 @@ select.form-control::-ms-expand {
 }
 .detail-highlights > div > div .description-wrapper .description:after {
   bottom: 0;
+}
+.lease__title {
+  color: #3b5256;
+  font-family: 'Cochin', serif;
+  font-size: 38px;
+  text-align: left;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 136px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .lease__title {
+    font-size: 29px;
+  }
+}
+.lease__subtitle {
+  color: #3b5256;
+  font-family: 'Cochin', serif;
+  font-size: 25px;
+  text-align: left;
+  margin-top: 10px;
+}
+.lease__price {
+  font-family: 'Cochin', serif;
+  color: #a2d183;
+  font-size: 25px;
+  text-align: left;
+  margin: 10px 0;
+}
+.lease__description {
+  font-size: 18px;
+  text-align: left;
+  color: #3b5256;
+  font-family: 'Gotham', sans-serif;
+  margin-bottom: 50px;
+}
+.lease__description--bold {
+  font-family: 'Cochin', serif;
+  font-weight: bold;
+}
+.lease__list {
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+.lease__list > li {
+  text-align: left;
 }
 .section-urban-page-separator {
   padding: 0;
