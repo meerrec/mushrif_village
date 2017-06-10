@@ -7210,8 +7210,8 @@ button.close {
             transform: translateX(50px) translateY(100px) scale(1.29);
   }
   100% {
-    -webkit-transform: translateX(-50px) translateY(0) scale(1);
-            transform: translateX(-50px) translateY(0) scale(1);
+    -webkit-transform: translateX(-50px) translateY(-50) scale(1.5);
+            transform: translateX(-50px) translateY(-50) scale(1.5);
   }
 }
 @keyframes hero-animation {
@@ -7228,8 +7228,8 @@ button.close {
             transform: translateX(50px) translateY(100px) scale(1.29);
   }
   100% {
-    -webkit-transform: translateX(-50px) translateY(0) scale(1);
-            transform: translateX(-50px) translateY(0) scale(1);
+    -webkit-transform: translateX(-50px) translateY(-50) scale(1.5);
+            transform: translateX(-50px) translateY(-50) scale(1.5);
   }
 }
 .logo-fade-in {
