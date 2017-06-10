@@ -11,6 +11,9 @@
     background-image: url(../../images/detail-welcome-home-bg.jpg);
     background-repeat: no-repeat;
     height: 1336px;
+    @media (max-width: 767px) {
+          height: auto;
+    }
   }
   &__about {
     font-size: 31px;
@@ -36,7 +39,7 @@
     &--left {
       margin-top: 137px;
       margin-bottom: 56px;
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
             margin-top: 45px;
       }
     }
@@ -59,7 +62,7 @@
           min-height: 645px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
-          min-height: 515px;
+          min-height: 800px;
     }
   }
   &__title {
@@ -104,12 +107,16 @@
     color: #5e6a6c;
     .gotham;
     text-align: left;
+    margin-bottom: 30px;
     @media (max-width: 767px) {
           margin-top: 10px;
     }
   }
   &__footer {
     margin-top: 190px;
+    @media (max-width: 767px) {
+          margin-top: 55px;
+    }
   }
 }
 
@@ -120,7 +127,7 @@
   background-color: #fff;
   text-align: justify;
   padding: 20px;
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
         left: 0;
         top: 45px;
   }
@@ -143,6 +150,9 @@
           font-size: 26px;
           margin-top: 40px;
           margin-bottom: 25px;
+    }
+    @media (min-width: 767px) and (max-width: 1199px) {
+          font-size: 40px;
     }
   }
   &__paragraph {

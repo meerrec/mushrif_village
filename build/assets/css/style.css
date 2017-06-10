@@ -7279,6 +7279,11 @@ button.close {
   background-repeat: no-repeat;
   height: 1336px;
 }
+@media (max-width: 767px) {
+  .welcome--bg {
+    height: auto;
+  }
+}
 .welcome__about {
   font-size: 31px;
   color: #09262c;
@@ -7309,7 +7314,7 @@ button.close {
   margin-top: 137px;
   margin-bottom: 56px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .welcome__line--left {
     margin-top: 45px;
   }
@@ -7344,7 +7349,7 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .welcome__wrap-letter {
-    min-height: 515px;
+    min-height: 800px;
   }
 }
 .welcome__title {
@@ -7397,6 +7402,7 @@ button.close {
   color: #5e6a6c;
   font-family: 'Gotham', sans-serif;
   text-align: left;
+  margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .welcome__bottom-text {
@@ -7406,6 +7412,11 @@ button.close {
 .welcome__footer {
   margin-top: 190px;
 }
+@media (max-width: 767px) {
+  .welcome__footer {
+    margin-top: 55px;
+  }
+}
 .letter {
   position: absolute;
   top: -332px;
@@ -7413,7 +7424,7 @@ button.close {
   text-align: justify;
   padding: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .letter {
     left: 0;
     top: 45px;
@@ -7442,6 +7453,11 @@ button.close {
     font-size: 26px;
     margin-top: 40px;
     margin-bottom: 25px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .letter__title {
+    font-size: 40px;
   }
 }
 .letter__paragraph {
