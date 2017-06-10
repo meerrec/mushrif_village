@@ -64,9 +64,24 @@ $(window).resize(function() {
 
 });
 
+var toogleLogo = (function () {
+    var $logo = $('.logo-wrapper'),
+     $wrapper = $('#bs-example-navbar-collapse-1');
+
+    $wrapper.on('shown.bs.collapse', function () {
+      console.log('shown')
+      return $logo.animate({'opacity':.3})
+    })
+    $wrapper.on('hidden.bs.collapse', function () {
+      console.log('hidden')
+      return $logo.animate({'opacity':1})
+    })
+}());
 $(window).load(function() {
 
     $(window).trigger('resize');
+
+
 
 });
 

@@ -2,39 +2,56 @@
   height: 100vh;
   min-height: 100vh;
   display: table;
-  padding: 80px 0 0 0;
-
+  padding: 0 0 0 0;
   .section-container {
     display: table-cell;
     vertical-align: middle;
     padding: 200px 0;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
   }
 
   .section-content {
     display: inline-block;
-    width: auto;
-    padding: 80px 120px;
     background: rgba(0, 0, 0, 0.251);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.24);
+    @media (max-width: 767px) {
+      padding: 0;
+    }
 
     .section-title {
       font-size: 32px;
       text-transform: uppercase;
       line-height: 1;
       margin-bottom: 25px;
+      -webkit-text-stroke: .002em;
+      -webkit-text-stroke: #f5f5f5 1px;
+      text-shadow: rgba(0, 0, 0, 0.075) -1px 1px 3px;
+      font-weight: 100;
+      -webkit-text-fill-color: white;
       .gotham;
+      @media (max-width: 767px) {
+        font-size: 23px;
+      }
 
       div {
         .cochin;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        color: #fff;
+        -webkit-text-fill-color: hsla(42, 40%, 95%, 1);
+        -webkit-text-stroke-width: .004em;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.76);
+        text-shadow: hsla(172, 65%, 4%, 1) 0px 0px 2px;
         font-size: 65px;
         position: relative;
         padding: 25px 0 15px 0;
         margin-top: 25px;
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
-
+        @media (max-width: 767px) {
+          font-size: 10vw;
+        }
       }
     }
   }
@@ -44,6 +61,9 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    text-shadow: rgba(204, 204, 204, 0.2) -1px 1px 3px;
+    font-weight: 100;
+    -webkit-text-stroke: 0.022em;
   }
 
   .hero-nav {
@@ -115,6 +135,11 @@
   }
 
   .section-content {
+    @media (max-width: 767px) {
+        padding: 28vw 0 0 0;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
     width: 100%;
     max-width: 840px;
     padding: 80px;
