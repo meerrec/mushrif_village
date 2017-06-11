@@ -1570,12 +1570,12 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 768px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 1024px;
   }
 }
 @media (min-width: 1200px) {
@@ -7178,38 +7178,38 @@ button.close {
 }
 @-webkit-keyframes hero-animation {
   0% {
-    -webkit-transform: translateX(0) translateY(0) scale(1);
-            transform: translateX(0) translateY(0) scale(1);
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
   }
   40% {
-    -webkit-transform: translateX(50px) translateY(50px) scale(1.5);
-            transform: translateX(50px) translateY(50px) scale(1.5);
+    -webkit-transform: translateX(50px) translateY(50px);
+            transform: translateX(50px) translateY(50px);
   }
   60% {
-    -webkit-transform: translateX(50px) translateY(100px) scale(1.29);
-            transform: translateX(50px) translateY(100px) scale(1.29);
+    -webkit-transform: translateX(50px) translateY(100px);
+            transform: translateX(50px) translateY(100px);
   }
   100% {
-    -webkit-transform: translateX(-50px) translateY(-50) scale(1.5);
-            transform: translateX(-50px) translateY(-50) scale(1.5);
+    -webkit-transform: translateX(-50px) translateY(-50);
+            transform: translateX(-50px) translateY(-50);
   }
 }
 @keyframes hero-animation {
   0% {
-    -webkit-transform: translateX(0) translateY(0) scale(1);
-            transform: translateX(0) translateY(0) scale(1);
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
   }
   40% {
-    -webkit-transform: translateX(50px) translateY(50px) scale(1.5);
-            transform: translateX(50px) translateY(50px) scale(1.5);
+    -webkit-transform: translateX(50px) translateY(50px);
+            transform: translateX(50px) translateY(50px);
   }
   60% {
-    -webkit-transform: translateX(50px) translateY(100px) scale(1.29);
-            transform: translateX(50px) translateY(100px) scale(1.29);
+    -webkit-transform: translateX(50px) translateY(100px);
+            transform: translateX(50px) translateY(100px);
   }
   100% {
-    -webkit-transform: translateX(-50px) translateY(-50) scale(1.5);
-            transform: translateX(-50px) translateY(-50) scale(1.5);
+    -webkit-transform: translateX(-50px) translateY(-50);
+            transform: translateX(-50px) translateY(-50);
   }
 }
 .logo-fade-in {
