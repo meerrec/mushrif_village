@@ -10,21 +10,14 @@
 }
 @keyframes logo-fade-in {
   0% {
-    transform: translate(0, -100px);
-
-  }
-  40% {
-    transform: translate(0, -50px);
-
-  }
-  60% {
-    transform: translate(0, 10%);
+    opacity: 0;
 
   }
   100% {
-    transform: translate(0, 0%);
+    opacity: 1;
 
   }
+
 }
 
 @keyframes hero-animation {
@@ -45,10 +38,7 @@
 
 
 .logo-fade-in {
-  -webkit-animation: .83s logo-fade-in;
-  -webkit-animation-delay: .8s;
-
-
+  animation: 1s logo-fade-in;
 }
 
 .element {

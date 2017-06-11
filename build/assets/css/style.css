@@ -7162,38 +7162,18 @@ button.close {
 }
 @-webkit-keyframes logo-fade-in {
   0% {
-    -webkit-transform: translate(0, -100px);
-            transform: translate(0, -100px);
-  }
-  40% {
-    -webkit-transform: translate(0, -50px);
-            transform: translate(0, -50px);
-  }
-  60% {
-    -webkit-transform: translate(0, 10%);
-            transform: translate(0, 10%);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    opacity: 1;
   }
 }
 @keyframes logo-fade-in {
   0% {
-    -webkit-transform: translate(0, -100px);
-            transform: translate(0, -100px);
-  }
-  40% {
-    -webkit-transform: translate(0, -50px);
-            transform: translate(0, -50px);
-  }
-  60% {
-    -webkit-transform: translate(0, 10%);
-            transform: translate(0, 10%);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    opacity: 1;
   }
 }
 @-webkit-keyframes hero-animation {
@@ -7233,8 +7213,8 @@ button.close {
   }
 }
 .logo-fade-in {
-  -webkit-animation: 0.83s logo-fade-in;
-  -webkit-animation-delay: .8s;
+  -webkit-animation: 1s logo-fade-in;
+          animation: 1s logo-fade-in;
 }
 .element {
   -webkit-animation: pulse 5s infinite;
