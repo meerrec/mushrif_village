@@ -9763,6 +9763,21 @@ a:active {
 .new-footer__title--follow {
   padding-top: 24px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-footer__title--follow {
+    margin-right: 18%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .new-footer__title--follow {
+    margin-right: 38%;
+  }
+}
+@media (min-width: 1200px) {
+  .new-footer__title--follow {
+    margin-right: 18%;
+  }
+}
 .new-footer--padding {
   padding-right: 0;
 }
@@ -9807,7 +9822,8 @@ a:active {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .new-footer--text-align {
-    margin-left: 35px;
+    max-width: 208px;
+    margin-left: 26%;
   }
 }
 @media (min-width: 1200px) {
