@@ -11798,5 +11798,20 @@ select.form-control::-ms-expand {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .urban--small-content {
+    min-height: 462px;
+  }
+}
+@media (max-width: 767px) {
+  .urban--small-content--more {
+    margin-bottom: 122px;
+  }
+}
+@media (max-width: 767px) {
+  .urban__small-title {
+    margin-top: 175px !important;
+  }
+}
 
 /*# sourceMappingURL=maps/style.css.map */
