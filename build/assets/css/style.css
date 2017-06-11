@@ -10510,8 +10510,6 @@ select.form-control::-ms-expand {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-animation: hero-animation 70s linear alternate infinite;
-          animation: hero-animation 70s linear alternate infinite;
 }
 .section-hero-hp .section-content {
   width: 100%;

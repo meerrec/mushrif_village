@@ -541,7 +541,7 @@
                                     });
                 
                                     map.setOptions({styles: mapStyles});
-                
+                                    var image = "/assets/images/marker.png"
                                     var marker = new google.maps.Marker({
                                         map: map,
                                         // Define the place with a location, and a query string.
@@ -550,6 +550,7 @@
                                             query: 'Mushrif Village'
                 
                                         },
+                                        icon: image,
                                         // Attributions help users find your site again.
                                         attribution: {
                                             source: 'Google Maps JavaScript API',
@@ -670,6 +671,7 @@
 <script src="./assets/js/scripts.js"></script>
 <script src="./assets/js/jquery.bxslider.js"></script>
 <script src="./assets/js/fotorama.js"></script>
+<script src="./assets/js/tilt.jquery.js"></script>
 
 <!--page scripts-->
 
