@@ -7568,6 +7568,11 @@ button.close {
 .welcome-btn > img {
   margin-top: -4px;
 }
+@media (max-width: 991px) {
+  .featured-villa--sizing {
+    margin-bottom: 40px;
+  }
+}
 @media (min-width: 1200px) {
   .featured-villa--sizing {
     height: 415px;
@@ -11057,7 +11062,7 @@ select.form-control::-ms-expand {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .highlights-list-wrapper {
-    max-width: 768px;
+    width: 400px;
     margin: 80px auto;
   }
 }
@@ -13270,6 +13275,11 @@ select.form-control::-ms-expand {
   position: relative;
   text-align: left;
 }
+@media (max-width: 991px) {
+  .featured-villa-description-container {
+    position: static;
+  }
+}
 .featured-villa-description-container .featured-villa-description {
   padding: 50px;
   border: 1px solid #a7d489;
@@ -13279,6 +13289,17 @@ select.form-control::-ms-expand {
   margin-right: 20px;
   left: -30px;
   top: 40px;
+}
+@media (max-width: 767px) {
+  .featured-villa-description-container .featured-villa-description {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 991px) {
+  .featured-villa-description-container .featured-villa-description {
+    position: static;
+    margin-right: 0;
+  }
 }
 .featured-villa-description-container .featured-villa-description:after {
   background: url(../images/hightlights-title-bg.png) 0% 0% no-repeat;
@@ -13291,6 +13312,11 @@ select.form-control::-ms-expand {
   height: 86px;
   width: 146px;
 }
+@media (max-width: 991px) {
+  .featured-villa-description-container .featured-villa-description:after {
+    left: 110px;
+  }
+}
 .featured-villa-description-container .featured-villa-description:before {
   position: absolute;
   display: block;
@@ -13300,6 +13326,30 @@ select.form-control::-ms-expand {
   height: 1px;
   width: 90px;
   border-top: 1px solid #a7d489;
+}
+@media (max-width: 380px) {
+  .featured-villa-description-container .featured-villa-description:before {
+    left: 5%;
+    width: 89px;
+  }
+}
+@media (min-width: 381px) and (max-width: 436px) {
+  .featured-villa-description-container .featured-villa-description:before {
+    left: 4%;
+    width: 89px;
+  }
+}
+@media (min-width: 437px) and (max-width: 767px) {
+  .featured-villa-description-container .featured-villa-description:before {
+    left: 3%;
+    width: 93px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .featured-villa-description-container .featured-villa-description:before {
+    left: 2%;
+    width: 89px;
+  }
 }
 .featured-villa-description-container .featured-villa-description h3:before {
   position: absolute;
@@ -13311,6 +13361,30 @@ select.form-control::-ms-expand {
   width: 380px;
   border-top: 1px solid #a7d489;
 }
+@media (max-width: 380px) {
+  .featured-villa-description-container .featured-villa-description h3:before {
+    right: 16px;
+    width: 101px;
+  }
+}
+@media (min-width: 381px) and (max-width: 436px) {
+  .featured-villa-description-container .featured-villa-description h3:before {
+    right: 16px;
+    width: 159px;
+  }
+}
+@media (min-width: 437px) and (max-width: 767px) {
+  .featured-villa-description-container .featured-villa-description h3:before {
+    right: 16px;
+    width: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .featured-villa-description-container .featured-villa-description h3:before {
+    right: 17px;
+    width: 540px;
+  }
+}
 .featured-villa-description-container .featured-villa-description h3 {
   font-size: 30px;
   color: #a2d183;
@@ -13318,6 +13392,16 @@ select.form-control::-ms-expand {
 .featured-villa-description-container .featured-villa-description h3 span {
   font-size: 20px;
   color: #85837a;
+}
+@media (max-width: 767px) {
+  .featured-villa-description-container .featured-villa-description h3 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .featured-villa-description-container .featured-villa-description h3 {
+    font-size: 27px;
+  }
 }
 .featured-villa-description-container .featured-villa-description a {
   padding: 5px 10px;
@@ -13333,6 +13417,11 @@ select.form-control::-ms-expand {
 }
 .featured-villa-description-container .featured-villa-description a:hover {
   background: #a2d183;
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .featured-villa-description-container .featured-villa-description p {
+    margin-bottom: -1em;
+  }
 }
 .left-carousel {
   color: #bab8af;
