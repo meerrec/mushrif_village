@@ -136,6 +136,15 @@
     border-right: 1px solid #c8cdce;
     white-space: nowrap;
     line-height: 38px;
+    > span {
+      @media (max-width: 767px) {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
     @media (min-width: 992px) and (max-width: 1199px) {
       font-size: 14px;
     }
