@@ -1,0 +1,425 @@
+.section-home-about {
+
+    padding: 0px;
+
+      .section-container {
+            height: 700px;
+            min-height: 700px;
+            background: url(../images/home-about.jpg) 50% 50% no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+      }
+
+}
+
+.section-home {
+    .section-container {
+        background: url(../images/grape-back.png) 30% 0% no-repeat;
+    }
+
+    background: url(../images/grape-right-back.png) 100% 50% no-repeat;
+}
+
+.welcome-home-container {
+    padding: 15px;
+    background: #fff;
+    text-align: left;
+    position: absolute;
+    top: -300px;
+
+    .welcome-home {
+        padding: 40px 30px 40px 50px;
+        border: 1px solid #e7eaea;
+
+        color: #817f78;
+
+        h2 {
+            margin-bottom: 20px;
+            color: #08252c;
+        }
+
+        a {
+            padding-top: 20px;
+            color: #08252c;
+        }
+
+        a:hover {
+            color: #506f75;
+        }
+    }
+}
+
+.home-description-container {
+    margin-top: 100px;
+    padding: 0 40px;
+    color: #08252c;
+    .home-description {
+        position: relative;
+        font-size: 22px;
+        padding: 30px 0px ;
+
+        :before {
+            content:"";
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            width: 10%;
+        }
+
+        :after {
+            content:"";
+            background: black;
+            position: absolute;
+            bottom:  0;
+            right: 0;
+            height: 1px;
+            width: 10%;
+        }
+
+        p {
+            text-align: left;
+        }
+
+
+    }
+}
+
+.feature-header {
+    color: #cdccc6;
+    text-align: left;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.featured-villa-image {
+  display: inline-block;
+
+  > a {
+    display: block;
+    max-width: 100%;
+    position: relative;
+
+    img {
+      position: relative;
+      display: block;
+      z-index: 1;
+      max-width: 100%;
+      border: 1px solid #cac8c8;
+      padding: 7px;
+    }
+
+
+    &:before {
+      opacity: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 3;
+      background: #a3d284 url(../images/icon-zoom.png) 50% 50% no-repeat;
+      width: 45px;
+      height: 40px;
+      right: 7px;
+      top: 7px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.featured-villa-description-container {
+    position: relative;
+    text-align: left;
+
+    .featured-villa-description {
+        padding: 50px;
+        border: 1px solid #a7d489;
+        border-top: none;
+        color: #918f85;
+        position: absolute;
+        margin-right: 20px;
+        left: -30px;
+        top: 40px;
+
+        &:after {
+            background: url(../images/hightlights-title-bg.png) 0% 0% no-repeat;
+            background-size: 60%;
+            position: absolute;
+            display: block;
+            content: "";
+            left:100px;
+            top: -30px;
+            height: 86px;
+            width: 146px;
+        }
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            left:0px;
+            top: 0px;
+            height: 1px;
+            width: 90px;
+            border-top: 1px solid #a7d489;
+        }
+
+        h3:before {
+            position: absolute;
+            display: block;
+            content: "";
+            right: 0px;
+            top: 0px;
+            height: 1px;
+            width: 380px;
+            border-top: 1px solid #a7d489;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #a2d183;
+            span {
+                font-size: 20px;
+                color: #85837a;
+            }
+        }
+
+        a {
+            padding: 5px 10px;
+            border: 1px solid #aed794;
+            background: #fff;
+            color: #7b7b76;
+            i {
+                color: #a3d284;
+            }
+            position: absolute;
+            bottom: -17px;
+            right: 35px;
+        }
+
+        a:hover {
+            background: #a2d183;
+        }
+    }
+}
+
+.left-carousel {
+    color: #bab8af;
+    position: absolute;
+    left: -20px;
+    top: 190px;
+    font-size: 40px;
+
+    &:hover {
+        color: #a3d284;
+    }
+}
+
+.right-carousel {
+    color: #bab8af;
+    position: absolute;
+    right: -20px;
+    top: 190px;
+    font-size: 40px;
+
+    &:hover {
+        color: #a3d284;
+    }
+}
+
+.glance-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    .left {
+        padding: 0px 30px;
+        text-align: right;
+        &:after {
+            border-right: 1px solid #3b5257;
+            position: absolute;
+            display: block;
+            content: "";
+            right: 0;
+            top: 10px;
+            height: 40px;
+            width: 3px;
+            border-left: 3px solid #fff;
+        }
+    }
+
+    .right {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: "Gotham", sans-serif;
+        padding: 8px 30px;
+        color: #5e6a6c;
+    }
+}
+
+.section-at-a-glance {
+    padding: 0;
+
+    .row {
+        max-width: 100%;
+    }
+
+    @mapHeight: 600px;
+    @borderWidth: 30px;
+    @borderHeight: 40px;
+
+    .base-border {
+        position: absolute;
+        display: block;
+        z-index: 500;
+        content: "";
+        background-color: #09262c;
+        opacity: 0.5;
+    }
+
+    // left
+    &:before {
+        .base-border;
+        left: 0px;
+        top: @borderHeight;
+        height: (@mapHeight - @borderHeight*2);
+        width: @borderWidth;
+        border-right: 1px solid #fff;
+    }
+
+    // right
+    &:after {
+        .base-border;
+        right: 0px;
+        top: @borderHeight;
+        height: (@mapHeight - @borderHeight*2);
+        width: @borderWidth;
+        border-left: 1px solid #fff;
+    }
+
+    & .section-container {
+        // top
+        &:before {
+            .base-border;
+            left: 0px;
+            top: 0px;
+            height: @borderHeight;
+            width: 100%;
+        }
+
+        // bottom
+        &:after {
+            .base-border;
+            left: 0px;
+            bottom: 0px;
+            height: @borderHeight;
+            width: 100%;
+        }
+
+    }
+
+    #mapid {
+        height: @mapHeight;
+
+        &:before {
+            position: absolute;
+            display: block;
+            z-index: 500;
+            content: "";
+            left: @borderWidth;
+            top: @borderHeight;
+            height: 1px;
+            width: calc(100% ~'-' (@borderWidth*2px));
+            border-top: 1px solid #fff;
+        }
+
+        &:after {
+            position: absolute;
+            display: block;
+            z-index: 500;
+            content: "";
+            left: @borderWidth;
+            bottom: @borderHeight;
+            height: 1px;
+            width: calc(100% ~'-' (@borderWidth*2px));
+            border-top: 1px solid #fff;
+        }
+
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 600;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 5px 2px 5px;
+    }
+
+    .arrow-left {
+        .arrow;
+        left: (@borderWidth - 15px);
+        top: calc(50% - 5px);
+    }
+
+    .arrow-right {
+        .arrow;
+        right: (@borderWidth - 15px);
+        top: calc(50% - 5px);
+    }
+
+    .arrow-up {
+        .arrow;
+        padding: 2px 9px;
+        top: (@borderHeight - 15px);
+        left: calc(50% - 5px);
+    }
+
+    .arrow-down {
+        .arrow;
+        padding: 2px 9px;
+        bottom: (@borderHeight - 15px);
+        left: calc(50% - 5px);
+    }
+
+}
+
+.reverse-popup {
+
+    .leaflet-popup-tip-container {
+    	top: -40px;
+
+        .leaflet-popup-tip {
+            margin-top: 0px;
+        }
+    }
+}
+
+.custom-popup {
+
+    position: absolute;
+
+    .leaflet-popup-content-wrapper {
+        border-radius: 0px;
+    }
+
+    .leaflet-popup-close-button {
+        display: none;
+    }
+
+    .leaflet-popup-tip {
+        width: 1px;
+        height: 40px;
+        box-shadow: none;
+        transform: none;
+
+    }
+
+    .leaflet-popup-tip-container {
+        height: 40px;
+        position: absolute;
+    }
+}

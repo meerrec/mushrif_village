@@ -38,23 +38,32 @@
   }
 }
 
-
-.highlights-list {
-  .caption {
-    color: #ffffff;
-    font-size: 19px;
-    padding: 20px 22px;
+.highlights-list-wrapper {
+  position: relative;
+  &:after {
+    content: '';
     display: block;
-    background-color: #08252c;
-    background: rgba(6, 37, 44, 0.9);
     position: absolute;
-    z-index: 3;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.3s;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -60%);
+    width: 303px;
+    height: 394px;
+    border: 8px solid #e1e5e5;
   }
+}
+.highlights-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+  .clearfix;
+
+
+
   li {
     float: left;
     margin: 0 58px 50px 0;
@@ -110,158 +119,5 @@
       }
     }
 
-  }
-}
-
-.highlights {
-  &--bg {
-    background-color: #fff;
-  }
-  &__title {
-    .cochin;
-    font-size: 41px;
-    color: #3b5256;
-    margin-top: 270px;
-    position: relative;
-    margin-left: 97px;
-    margin-bottom: 65px;
-    text-align: left;
-    @media (max-width: 767px) {
-        margin: 20px 0;
-        font-size: 36px;
-    }
-    @media (min-width: 768px) and (max-width: 992px) {
-        margin: 30px 85px;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        font-size: 36px;
-        margin-bottom: 30px;
-    }
-    &:before {
-      content: url(../../images/small_branch.png);
-      background-repeat: no-repeat;
-      z-index: 100000;
-      position: absolute;
-      left: -93px;
-      top: 2px;
-      @media (max-width: 767px) {
-          display: none;
-      }
-      @media (min-width: 768px) and (max-width: 992px) {
-        left: -15%;
-      }
-    }
-  }
-  &__desc {
-    color: #a2d183;
-    font-size: 39px;
-    text-align: left;
-    margin-bottom: 270px;
-    @media (max-width: 767px) {
-        margin-bottom: 30px;
-        font-size: 30px;
-    }
-    @media (min-width: 768px) and (max-width: 992px) {
-        margin-bottom: 50px;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        font-size: 32px;
-        margin-bottom: 300px;
-    }
-  }
-  &__wrap-img {
-    margin-top: 120px;
-    position: relative;
-    margin-bottom: 140px;
-    @media (max-width: 767px) {
-        margin: 0 auto;
-        min-height: 400px;
-        width: 290px;
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-        margin-top: 0;
-        min-height: 570px;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      margin-top: 120px;
-      min-height: 570px;
-    }
-  }
-  &__border {
-    position: absolute;
-    height: 380px;
-    border: 8px solid #e1e5e5;
-    width: 300px;
-    left: 25%;
-    top: 110px;
-    @media (max-width: 767px) {
-      width: 155px;
-      left: 24%;
-      height: 155px;
-    }
-  }
-  &__img-1 {
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    z-index: 2;
-    @media (max-width: 767px) {
-        height: 135px;
-        left: 0;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        left: 0;
-    }
-    &:before {
-      top: 5px;
-      bottom: 5px;
-      left: 5px;
-      right: 5px;
-      z-index: 2;
-      content: ' s';
-      display: block;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-    }
-  }
-  &__img-2 {
-    position: absolute;
-    top: 65px;
-    right: 77px;
-    z-index: 2;
-    @media (max-width: 767px) {
-        height: 135px;
-        right: 0;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        right: 0;
-    }
-  }
-  &__img-3 {
-    position: absolute;
-    left: 50px;
-    top: 310px;
-    z-index: 2;
-    @media (max-width: 767px) {
-        height: 135px;
-        top: 165px;
-        left: 0;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        left: 0;
-    }
-  }
-  &__img-4 {
-    position: absolute;
-    top: 373px;
-    right: 77px;
-    z-index: 2;
-    @media (max-width: 767px) {
-        height: 135px;
-        top: 231px;
-        right: 0;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        right: 0;
-    }
   }
 }
