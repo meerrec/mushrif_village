@@ -9830,6 +9830,12 @@ a:active {
     margin-left: 35px;
   }
 }
+@media (min-width: 1200px) {
+  .new-footer--text-align {
+    max-width: 208px;
+    margin-left: 24%;
+  }
+}
 .new-footer__site-links {
   list-style: none;
   margin-top: 40px;
