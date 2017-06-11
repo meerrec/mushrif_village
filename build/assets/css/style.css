@@ -8681,8 +8681,8 @@ ul.bxslider {
   top: 0;
   left: 0;
   border-style: solid;
-  border-color: #00afea;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(64, 64, 64, 0.1));
+  border-color: rgba(8, 37, 44, 0.7);
+  background-image: linear-gradient(to bottom right, rgba(8, 37, 44, 0.7), rgba(8, 37, 44, 0.7));
 }
 .fotorama--hidden {
   position: absolute;
