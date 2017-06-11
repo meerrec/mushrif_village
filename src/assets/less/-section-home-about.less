@@ -136,6 +136,9 @@
 .featured-villa-description-container {
     position: relative;
     text-align: left;
+    @media (max-width: 991px) {
+        position: static;
+    }
 
     .featured-villa-description {
         padding: 50px;
@@ -146,6 +149,13 @@
         margin-right: 20px;
         left: -30px;
         top: 40px;
+        @media (max-width: 767px) {
+            padding: 50px 15px;
+        }
+        @media (max-width: 991px) {
+            position: static;
+            margin-right: 0;
+        }
 
         &:after {
             background: url(../images/hightlights-title-bg.png) 0% 0% no-repeat;
@@ -157,6 +167,9 @@
             top: -30px;
             height: 86px;
             width: 146px;
+            @media (max-width: 991px) {
+                left: 110px;
+            }
         }
 
         &:before {
@@ -168,6 +181,22 @@
             height: 1px;
             width: 90px;
             border-top: 1px solid #a7d489;
+            @media (max-width: 380px) {
+                left: 5%;
+                width: 89px;
+            }
+            @media (min-width: 381px) and (max-width: 436px) {
+                left: 4%;
+                width: 89px;
+            }
+            @media (min-width: 437px) and (max-width: 767px) {
+                left: 3%;
+                width: 93px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                left: 2%;
+                width: 89px;
+            }
         }
 
         h3:before {
@@ -179,6 +208,22 @@
             height: 1px;
             width: 380px;
             border-top: 1px solid #a7d489;
+            @media (max-width: 380px) {
+                right: 16px;
+                width: 101px;
+            }
+            @media (min-width: 381px) and (max-width: 436px) {
+                right: 16px;
+                width: 159px;
+            }
+            @media (min-width: 437px) and (max-width: 767px) {
+                right: 16px;
+                width: 250px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                right: 17px;
+                width: 540px;
+            }
         }
 
         h3 {
@@ -187,6 +232,12 @@
             span {
                 font-size: 20px;
                 color: #85837a;
+            }
+            @media (max-width: 767px) {
+                font-size: 23px;
+            }
+            @media (min-width: 991px) and (max-width: 1199px) {
+                font-size: 27px;
             }
         }
 
@@ -205,6 +256,12 @@
 
         a:hover {
             background: #a2d183;
+        }
+
+        p {
+            @media (min-width: 991px) and (max-width: 1199px) {
+                margin-bottom: -1em;
+            }
         }
     }
 }
