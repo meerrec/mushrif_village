@@ -202,7 +202,7 @@
                     <div class="tab-pane active" role="tabpanel" id="location">
                         <div class="map-wrapper">
                             <div class="map-container">
-                                <div class="map-inner">
+                                <div class="map-inner" style="padding:40px">
                         
                                     <div class="location-map" id="map"></div>
                         
@@ -217,6 +217,7 @@
                                                 "elementType": "geometry",
                                                 "stylers": [
                                                     {
+                                                        "padding": "50px",
                                                         "color": "#f5f5f5"
                                                     }
                                                 ]
@@ -367,6 +368,7 @@
                                                 "elementType": "labels.text.fill",
                                                 "stylers": [
                                                     {
+                        
                                                         "color": "#9e9e9e"
                                                     }
                                                 ]
@@ -375,9 +377,22 @@
                         
                                         function initMap() {
                                             var minZoomLevel = 15;
+                                            console.log
                                             var map = new google.maps.Map(document.getElementById('map'), {
                                                 zoom: minZoomLevel,
                                                 scrollwheel: false,
+                                                mapTypeControl: true,
+                                                mapTypeControlOptions: {
+                                                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                                                    position: google.maps.ControlPosition.TOP_CENTER
+                                                },
+                                                zoomControl: true,
+                                                zoomControlOptions: {
+                                                    position: google.maps.ControlPosition.RIGHT_BOTTOM,
+                                                    style: {"color":"red"}
+                        
+                                                },
+                                                scaleControl: true,
                         //                        mapTypeControl: false,
                         //                        scaleControl: false,
                         //                        zoomControl: false,
@@ -385,7 +400,7 @@
                         //                        streetViewControl: false,
                                                 center: {lat: 25.232010, lng: 55.435263}
                                             });
-                        
+                                            console.log(map)
                                             map.setOptions({styles: mapStyles});
                                             var image = "/assets/images/marker.png"
                                             var marker = new google.maps.Marker({
