@@ -10,45 +10,35 @@
 }
 @keyframes logo-fade-in {
   0% {
-    transform: translate(0, -100px);
-
-  }
-  40% {
-    transform: translate(0, -50px);
-
-  }
-  60% {
-    transform: translate(0, 10%);
+    opacity: 0;
 
   }
   100% {
-    transform: translate(0, 0%);
+    opacity: 1;
 
   }
+
 }
 
 @keyframes hero-animation {
   0%{
-    transform: translateX(0) translateY(0) scale(1);
+    transform: translateX(0) translateY(0);
   }
   40% {
-    transform: translateX(50px) translateY(50px) scale(1.5);
+    transform: translateX(50px) translateY(50px);
   }
   60%{
-    transform: translateX(50px) translateY(100px) scale(1.29);
+    transform: translateX(50px) translateY(100px);
   }
   100% {
-    transform: translateX(-50px) translateY(-50) scale(1.5);
+    transform: translateX(-50px) translateY(-50);
   }
 }
 
 
 
 .logo-fade-in {
-  -webkit-animation: .83s logo-fade-in;
-  -webkit-animation-delay: .8s;
-
-
+  animation: 1s logo-fade-in;
 }
 
 .element {
