@@ -79,10 +79,8 @@
     
     
     <section class="section section-hero section-hero-hp">
-        <div class="section-background">
     
-        </div>
-        <div class="section-container">
+        <div class="section-container layer" data-depth="0.10">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -103,6 +101,9 @@
             </div>
           </div>
     
+        </div>
+        <div class="section-background layer" data-depth="0.20">
+          <img src="assets/images/hero-hp.jpg" alt="Hero">
         </div>
     </section>
 
@@ -239,18 +240,22 @@
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
                     <div class="carousel-inner">
-                        <div class="item active">
+                        <div class=" ">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="featured-villa-image">
-                                        <a href="images/featured-villa-1.jpg" class="highlight-colorbox"><img src="images/featured-villa-1.jpg" alt=""></a>
+                                        <a href="images/featured-villa-1.jpg" class="highlight-colorbox">
+                                            <img src="images/featured-villa-1.jpg" alt="" class="featured-villa--sizing">
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 featured-villa-description-container ">
-                                    <div class="featured-villa-description clearfix">
-                                        <h3>4 Bedroom Semi-detached Villa with Maid’s Room <span> &ndash; Type A</span></h3>
-                                        <p>With 3645 sq.ft of versatile living space, this magnificent duplex villa will feel like home as soon as you step through the doors. Cascading chandeliers hanging from ceilings create quite a statement in the room and add a touch of glamour.</p>
-                                        <a class="pull-right" href="1.&#32;MUSHRIF_VILLAGE_HOMEPAGE.html#">FIND OUT MORE &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="featured-villa-description-container">
+                                        <div class="featured-villa-description clearfix">
+                                            <h3>4 Bedroom Semi-detached Villa with Maid’s Room <span> &ndash; Type A</span></h3>
+                                            <p>With 3645 sq.ft of versatile living space, this magnificent duplex villa will feel like home as soon as you step through the doors. Cascading chandeliers hanging from ceilings create quite a statement in the room and add a touch of glamour.</p>
+                                            <a class="pull-right" href="1.&#32;MUSHRIF_VILLAGE_HOMEPAGE.html#">FIND OUT MORE &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +263,7 @@
     
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="featured-villa-image">
                                         <a href="images/featured-villa-2.jpg" class="highlight-colorbox"><img src="images/featured-villa-2.jpg" alt=""></a>
                                     </div>
@@ -679,14 +684,16 @@
 </footer>
 
 <script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/parallax.js"></script>
 <script src="./assets/js/bootstrap.js"></script>
 <script src="./assets/js/jquery.colorbox-min.js"></script>
 <script src="./assets/js/owl.carousel.js"></script>
 <script src="./assets/js/ion.rangeSlider.js"></script>
-<script src="./assets/js/scripts.js"></script>
+
 <script src="./assets/js/jquery.bxslider.js"></script>
 <script src="./assets/js/fotorama.js"></script>
-<script src="./assets/js/tilt.jquery.js"></script>
+
+<script src="./assets/js/scripts.js"></script>
 
 <!--page scripts-->
 

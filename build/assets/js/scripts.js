@@ -1,12 +1,6 @@
 $(document).ready(function() {
 
-    $( '.my-parallax' ).parallax( {
-        mouseport: jQuery("#port")
-        }, {
-            xparallax: '200px'
-        }
 
-    );
 
     $('.gallery-colorbox').colorbox({
         // rel: 'album',
@@ -31,6 +25,11 @@ $(document).ready(function() {
         current: '',
         className: 'no-title'
     });
+
+
+
+
+
 
     $('.preaty-select').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -107,10 +106,21 @@ var welcomeCarousel = (function () {
 
 
 $("#example_id").ionRangeSlider();
+// Elements
+var scene = document.querySelector('.section-hero');
+var input = document.querySelector('.section-hero');
+
+// Pretty simple huh?
+var parallax = new Parallax(scene, {
+  hoverOnly: true,
+  relativeInput: true,
+  inputElement: input,
+  scaleX: 3,
+  scaleY: 12
+});
 
 $(document).ready(function(){
     $('.bxslider').bxSlider({
         pagerCustom: '#bx-pager'
     });
 });
-
