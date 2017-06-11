@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
+    $( '.my-parallax' ).parallax( {
+        mouseport: jQuery("#port")
+        }, {
+            xparallax: '200px'
+        }
 
+    );
 
     $('.gallery-colorbox').colorbox({
         // rel: 'album',
@@ -107,3 +113,4 @@ $(document).ready(function(){
         pagerCustom: '#bx-pager'
     });
 });
+
