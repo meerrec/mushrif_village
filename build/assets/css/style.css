@@ -9892,6 +9892,11 @@ select.form-control::-ms-expand {
   margin-bottom: 90px;
   border-bottom: 2px solid #bcc0c3;
 }
+@media (max-width: 767px) {
+  .list-item-wrapper {
+    display: inline-block;
+  }
+}
 .list-item-wrapper:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -9911,6 +9916,11 @@ select.form-control::-ms-expand {
   bottom: 0;
   left: 19%;
   border: 1px solid #a8d48b;
+}
+@media (max-width: 767px) {
+  .list-item:after {
+    border: none;
+  }
 }
 .list-item > * {
   position: relative;
@@ -9971,6 +9981,23 @@ select.form-control::-ms-expand {
   position: relative;
   float: left;
 }
+@media (max-width: 767px) {
+  .list-item-inner .img {
+    width: 295px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-item-inner .img {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .list-item-inner .img {
+    width: 400px;
+  }
+}
 .list-item-inner .img:after {
   content: '';
   display: block;
@@ -9990,6 +10017,25 @@ select.form-control::-ms-expand {
 }
 .list-item-inner .content {
   margin-left: 578px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .list-item-inner .content {
+    display: block;
+    margin-left: 0;
+    width: 29rem;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-item-inner .content {
+    margin-left: 350px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .list-item-inner .content {
+    margin-left: 440px;
+  }
 }
 .list-item-inner .content .header {
   margin: 20px 0;
@@ -9997,6 +10043,23 @@ select.form-control::-ms-expand {
 .list-item-inner .content .header .title {
   font-size: 36px;
   line-height: 1.1;
+}
+@media (max-width: 767px) {
+  .list-item-inner .content .header .title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-item-inner .content .header .title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .list-item-inner .content .header .title {
+    font-size: 27px;
+    text-align: left;
+  }
 }
 .list-item-inner .content .header .title span {
   font-size: 24px;
@@ -10011,6 +10074,23 @@ select.form-control::-ms-expand {
   color: #a2d183;
   line-height: 1;
 }
+@media (max-width: 767px) {
+  .list-item-inner .content .price {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-item-inner .content .price {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .list-item-inner .content .price {
+    font-size: 29px;
+    margin-bottom: 10px;
+  }
+}
 .list-item .buttons {
   position: absolute;
   bottom: 0;
@@ -10018,9 +10098,32 @@ select.form-control::-ms-expand {
   -webkit-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
+@media (max-width: 767px) {
+  .list-item .buttons {
+    bottom: -35px;
+    right: 0;
+  }
+}
 .list-item .buttons .button {
   min-width: 165px;
   margin-left: 2px;
+}
+@media (max-width: 767px) {
+  .list-item .buttons .button {
+    min-width: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .list-item .buttons .button {
+    min-width: 0;
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .list-item .buttons .button {
+    min-width: 100px;
+    font-size: 15px !important;
+  }
 }
 .villa-options-list {
   padding: 25px 0;
@@ -10029,6 +10132,12 @@ select.form-control::-ms-expand {
   border-bottom: 1px solid #d1d5d6;
   list-style: none;
   white-space: nowrap;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .villa-options-list {
+    padding: 7px 0;
+    margin: 0 0 23px 0;
+  }
 }
 .villa-options-list li {
   font-size: 22px;
@@ -10052,7 +10161,7 @@ select.form-control::-ms-expand {
     font-size: 14px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .villa-options-list li {
     font-size: 14px;
   }
@@ -10088,6 +10197,45 @@ select.form-control::-ms-expand {
 }
 .badroom--margin {
   margin-bottom: 50px !important;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .bedroom--main > span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .villa-options-list--main {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .my-list-item {
+    padding: 0;
+  }
+}
+.m-villa__btn {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .m-villa__btn > .button-call:before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .m-villa__btn > .button-email:before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .m-villa__btn > .button-item {
+    padding: 18px 11px 14px 9px;
+    font-size: 18px;
+  }
+}
+.villa__line {
+  color: #bbc0c0;
+  margin: 0;
 }
 .section-villas-list {
   background: #f8f7f5 url(../images/bg-pattern.jpg) 50% 0 repeat;
