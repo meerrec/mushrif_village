@@ -2,105 +2,145 @@ $(document).ready(function() {
 
 
 
-    $('.gallery-colorbox').colorbox({
-        // rel: 'album',
-        fixed: true,
-        maxWidth: '90%',
-        maxHeight: '90%',
-        current: '',
-        title: function(){
-            var el = $(this);
-            if (el.data('title')) {
-                return "<div class='title-wrapper'><div class='title'>"+ el.data('title') +"</div><div class='description'>" + el.data('description') + "</div></div>";
-            } else {
-                return "";
-            }
-        }
-    });
-    $('.highlight-colorbox').colorbox({
-        rel: 'album',
-        fixed: true,
-        maxWidth: '90%',
-        maxHeight: '90%',
-        current: '',
-        className: 'no-title'
-    });
-    
-    $(document).on('cbox_open',function(){
-        $(document.body).css('overflow','hidden');
-    }).on('cbox_closed',function(){
-        $(document.body).css('overflow','');
-    });
+  $('.gallery-colorbox').colorbox({
+    // rel: 'album',
+    fixed: true,
+    maxWidth: '90%',
+    maxHeight: '90%',
+    current: '',
+    title: function() {
+      var el = $(this);
+      if (el.data('title')) {
+        return "<div class='title-wrapper'><div class='title'>" + el.data('title') + "</div><div class='description'>" + el.data('description') + "</div></div>";
+      } else {
+        return "";
+      }
+    }
+  });
+  $('.highlight-colorbox').colorbox({
+    rel: 'album',
+    fixed: true,
+    maxWidth: '90%',
+    maxHeight: '90%',
+    current: '',
+    className: 'no-title'
+  });
 
+  $(document).on('cbox_open', function() {
+    $(document.body).css('overflow', 'hidden');
+  }).on('cbox_closed', function() {
+    $(document.body).css('overflow', '');
+  });
 
+  $('.preaty-select').each(function() {
+    var $this = $(this),
+      numberOfOptions = $(this).children('option').length;
 
+    $this.addClass('select-hidden');
+    $this.wrap('<div class="select"></div>');
+    $this.after('<div class="select-styled"></div>');
 
+    var $styledSelect = $this.next('div.select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
 
+    var $list = $('<ul />', {
+      'class': 'select-options'
+    }).insertAfter($styledSelect);
 
-    $('.preaty-select').each(function(){
-        var $this = $(this), numberOfOptions = $(this).children('option').length;
+    for (var i = 0; i < numberOfOptions; i++) {
+      $('<li />', {
+        text: $this.children('option').eq(i).text(),
+        rel: $this.children('option').eq(i).val()
+      }).appendTo($list);
+    }
 
-        $this.addClass('select-hidden');
-        $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select-styled"></div>');
+    var $listItems = $list.children('li');
 
-        var $styledSelect = $this.next('div.select-styled');
-        $styledSelect.text($this.children('option').eq(0).text());
-
-        var $list = $('<ul />', {
-            'class': 'select-options'
-        }).insertAfter($styledSelect);
-
-        for (var i = 0; i < numberOfOptions; i++) {
-            $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
-            }).appendTo($list);
-        }
-
-        var $listItems = $list.children('li');
-
-        $styledSelect.click(function(e) {
-            e.stopPropagation();
-            $('div.select-styled.active').not(this).each(function(){
-                $(this).removeClass('active').next('ul.select-options').hide();
-            });
-            $(this).toggleClass('active').next('ul.select-options').toggle();
-        });
-
-        $listItems.click(function(e) {
-            e.stopPropagation();
-            $styledSelect.text($(this).text()).removeClass('active');
-            $this.val($(this).attr('rel'));
-            $list.hide();
-        });
-
-        $(document).click(function() {
-            $styledSelect.removeClass('active');
-            $list.hide();
-        });
-
+    $styledSelect.click(function(e) {
+      e.stopPropagation();
+      $('div.select-styled.active').not(this).each(function() {
+        $(this).removeClass('active').next('ul.select-options').hide();
+      });
+      $(this).toggleClass('active').next('ul.select-options').toggle();
     });
 
+    $listItems.click(function(e) {
+      e.stopPropagation();
+      $styledSelect.text($(this).text()).removeClass('active');
+      $this.val($(this).attr('rel'));
+      $list.hide();
+    });
+
+    $(document).click(function() {
+      $styledSelect.removeClass('active');
+      $list.hide();
+    });
+
+  });
 });
 
 
 
-var toogleLogo = (function () {
-    var $logo = $('.logo-wrapper'),
-     $wrapper = $('#bs-example-navbar-collapse-1');
+var proximityMap = (function() {
+  if (document.getElementById('js-proximity-map')) {
+    var layer;
+    var mapMinZoom = 4;
+    var mapMaxZoom = 4;
+    var map = L.map('js-proximity-map', {
+      maxZoom: mapMaxZoom,
+      minZoom: mapMinZoom,
+      attributionControl: false,
+      scrollWheelZoom: false,
+      zoomSnap: 1
+      // zoomControl:false
+    }).setView([0, 0], mapMaxZoom);
 
-    $wrapper.on('shown.bs.collapse', function () {
-      console.log('shown')
-      return $logo.animate({'opacity':.3})
-    })
-    $wrapper.on('hidden.bs.collapse', function () {
-      console.log('hidden')
-      return $logo.animate({'opacity':1})
-    })
+    var mapBounds = new L.LatLngBounds(
+        map.unproject([0, 1175], mapMaxZoom),
+        map.unproject([2266, 0], mapMaxZoom));
+
+    map.fitBounds(mapBounds);
+
+    layer = L.tileLayer('/data/proximity/{z}/{x}/{y}.jpg', {
+      minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+      continuousWorld: 'false',
+      bounds: mapBounds,
+    }).addTo(map);
+  } else {
+    return
+  }
 }())
 
-var welcomeCarousel = (function () {
+var glanceMap = (function() {
+  if (document.getElementById('mapid')) {
+    var layer;
+    var mapMinZoom = 4;
+    var mapMaxZoom = 4;
+    var map = L.map('mapid', {
+      maxZoom: mapMaxZoom,
+      minZoom: mapMinZoom,
+      attributionControl: false,
+      scrollWheelZoom: false,
+      zoomSnap: 1,
+      crs: L.CRS.Simple,
+      // zoomControl:false
+    }).setView([0, 0], mapMaxZoom);
+
+    var mapBounds = new L.LatLngBounds(
+        map.unproject([0, 1175], mapMaxZoom),
+        map.unproject([2266, 0], mapMaxZoom));
+
+    map.fitBounds(mapBounds);
+
+    layer = L.tileLayer('/data/glance/{z}/{x}/{y}.jpg', {
+      minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+      continuousWorld: 'false',
+      bounds: mapBounds,
+    }).addTo(map);
+  }
+}())
+
+var welcomeCarousel = (function() {
   $('.owl-carousel').owlCarousel({
     items: 1,
     nav: true
@@ -122,8 +162,8 @@ var parallax = new Parallax(scene, {
   scaleY: 12
 });
 
-$(document).ready(function(){
-    $('.bxslider').bxSlider({
-        pagerCustom: '#bx-pager'
-    });
+$(document).ready(function() {
+  $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager'
+  });
 });
