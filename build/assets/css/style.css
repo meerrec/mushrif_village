@@ -9973,7 +9973,7 @@ a:active {
   width: 23px;
   height: 23px;
   margin-right: 10px;
-  margin-top: -2px;
+  margin-top: -4px;
   margin-bottom: -1px;
 }
 .button-item.button-email:before {
@@ -12738,6 +12738,11 @@ select.form-control::-ms-expand {
 }
 .lease__list > li {
   text-align: left;
+}
+.m-villa__btn--detail {
+  margin-right: -4px;
+  padding: 15px 25px 10px 22px;
+  font-size: 19px;
 }
 .section-urban-page-separator {
   padding: 0;
