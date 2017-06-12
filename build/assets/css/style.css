@@ -13712,5 +13712,15 @@ select.form-control::-ms-expand {
 button {
   outline: none;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .controls {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumbs {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=maps/style.css.map */
