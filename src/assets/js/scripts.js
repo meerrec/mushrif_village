@@ -25,6 +25,12 @@ $(document).ready(function() {
         current: '',
         className: 'no-title'
     });
+    
+    $(document).on('cbox_open',function(){
+        $(document.body).css('overflow','hidden');
+    }).on('cbox_closed',function(){
+        $(document.body).css('overflow','');
+    });
 
 
 
