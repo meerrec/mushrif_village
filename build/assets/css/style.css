@@ -9830,6 +9830,7 @@ a:active {
 }
 .new-footer--text-align {
   text-align: left;
+  white-space: nowrap;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .new-footer--text-align {
@@ -13158,7 +13159,9 @@ select.form-control::-ms-expand {
 }
 @media (max-width: 767px) {
   .urban--small-content {
-    min-height: 462px;
+    min-height: 473px;
+    margin-top: 6% !important;
+    margin-bottom: 332px !important;
   }
 }
 @media (max-width: 767px) {
@@ -13169,6 +13172,49 @@ select.form-control::-ms-expand {
 @media (max-width: 767px) {
   .urban__small-title {
     margin-top: 175px !important;
+  }
+}
+.urban-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.urban-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.urban-content--thevillas {
+  margin-top: 19%;
+}
+@media (max-width: 767px) {
+  .urban-content--thevillas {
+    margin-top: 84px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .urban-content--thevillas {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .urban-content--thevillas {
+    margin-top: 37%;
+  }
+}
+.urban-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media (max-width: 767px) {
+  .urban-footer--thevillas {
+    padding: 78px 0 0 0 !important;
   }
 }
 .section-home-about {
@@ -13650,6 +13696,12 @@ select.form-control::-ms-expand {
   position: relative;
   /* relative, absolute, fixed */
   overflow: hidden;
+}
+#container section {
+  pointer-events: auto !important;
+}
+button {
+  outline: none;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -436,7 +436,9 @@
 .urban {
   &--small-content {
     @media (max-width: 767px) {
-      min-height: 462px;
+      min-height: 473px;
+      margin-top: 6% !important;
+      margin-bottom: 332px !important;
     }
     &--more {
       @media (max-width: 767px) {
@@ -447,6 +449,35 @@
   &__small-title {
     @media (max-width: 767px) {
       margin-top: 175px !important;
+    }
+  }
+}
+
+.urban-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.urban-content {
+  flex: 1 0 auto;
+  &--thevillas {
+    margin-top: 19%;
+    @media (max-width: 767px) {
+      margin-top: 84px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 20%;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 37%;
+    }
+  }
+}
+.urban-footer {
+  flex: 0 0 auto;
+  &--thevillas {
+    @media (max-width: 767px) {
+      padding: 78px 0 0 0 !important;
     }
   }
 }
