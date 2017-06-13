@@ -12713,6 +12713,11 @@ select.form-control::-ms-expand {
     overflow: hidden;
   }
 }
+@media (min-width: 1200px) {
+  .villadetail--style > .img > img {
+    width: 97%;
+  }
+}
 .detail-highlights > div > div {
   margin-bottom: 36px;
   text-align: center;
