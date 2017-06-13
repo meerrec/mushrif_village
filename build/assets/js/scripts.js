@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
 
+    $('#fotorama').fotorama({
+        arrowPrev: '<img src="../images/icon-phone.png" width="30" height="30" >',
+        arrowNext: '<img src="/path-to-image/Next.png" width="30" height="30" >'
+    });
 
   $('.gallery-colorbox').colorbox({
     // rel: 'album',
